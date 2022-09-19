@@ -1,0 +1,27 @@
+.table thead th {
+    background-color: #4a78ad;
+    color: #fff;
+}
+
+table tbody .actions button, a{
+    cursor: pointer;
+}
+
+table tbody .actions button:hover, a:hover{
+    background-color: lightsteelblue;
+}
+
+
+.btn-app {
+    color: #fff;
+    background-color: #4a78ad;
+}
+
+.bg {
+    background-color: #fff!important;
+}
+
+.nav-link {
+    color: #4a78ad;
+}
+

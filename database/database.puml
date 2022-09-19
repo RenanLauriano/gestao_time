@@ -1,0 +1,30 @@
+@startuml JiraAPI
+
+hide circle
+
+entity employee {
+    **id int <<auto_increment>>**
+    --
+    name **varchar(200)**
+}
+
+entity event {
+    **id int <<auto_increment>>**
+    --
+    description **varchar(50)**
+    date **datetime**
+}
+
+entity employee_event {
+    **id: int <<auto_increment>>**
+    --
+    employee_id: **int <<FK>>**
+    event_id: **int <<FK>>**
+    status **varchar(300)**
+}
+
+
+employee ||..|{ employee_event
+event ||..|{ employee_event
+
+@enduml 
